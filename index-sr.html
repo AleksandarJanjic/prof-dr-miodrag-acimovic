@@ -12,6 +12,10 @@
 <body>
   <div class="page">
   <header>
+    <div class="contact">
+      <img src="phone.png"/>
+      <p> +381 62 10 60 690 </p>
+    </div>
     <div class="language-options">
       <a href="index.html"> English </a>
       <a> Srpski </a>
@@ -45,14 +49,16 @@
   </div>
   <div class="main">
     <div class="jump-to-buttons">
-      <button class="jump-to-button"> Employment </button>
-      <button class="jump-to-button"> Awards </button>
+      <button class="jump-to-button" onclick="document.getElementById('educv').scrollIntoView();"> Obrazovanje </button>
+      <button class="jump-to-button" onclick="document.getElementById('employcv').scrollIntoView();"> Radno iskustvo </button>
+      <button class="jump-to-button" onclick="document.getElementById('awardscv').scrollIntoView();"> Nagrade </button>
+      <button class="jump-to-button" onclick="document.getElementById('bibliocv').scrollIntoView();"> Publikacije </button>
     </div></br>
     <div class="cv">
-      <h5> Education </h5></br>
+      <h5 id="educv"> Obrazovanje </h5></br>
         <p> Medical School: 1986-1992, Belgrade University, School of Medicine </p></br>
         <p> Residency: </p>
-        <p> 1992-1994 Interventional Radiology, Institute of Radiology, Clinical Center of Serbia, Belgrade, Serbia </p></br>
+        <p> 1992-1994 Interventna Radiologija, Institute of Radiology, Clinical Center of Serbia, Belgrade, Serbia </p></br>
         <p> Urology:1994-1999, Medical School, Belgrade University, university Urological clinic </br>
         January 1999. - Board Certified Specialist in Urology </p></br>
         <p> Master of Medical Sciences in Urology:
@@ -62,24 +68,24 @@
         2004 - 2007, Medical School, Belgrade University
         PhD Theses: " Correlation of expression of mitotic cyclins, high molecular weight cytokeratin and clinical parameters in the evaluation of prostate cancer aggression".
         </p></br>
-      <h5 id="employcv"> Employment </h5></br>
+      <h5 id="employcv"> Radno iskustvo </h5></br>
         <p> 1st Urology Department (Head of Department) Clinic of Urology, Clinical Center of Serbia,  Resavska 51, 11000 Belgrade, Serbia, 1994-present. </p></br>
       <h5> Academic positions </h5></br>
         <p> Associate Professor of Surgery, Medical School, University of Belgrade </p> </br>
-        <p>Member of the Program council in front of urology for doctoral studies in reconstructive surgery at the Faculty of Medicine, University of Belgrade
+        <p> Member of the Program council in front of urology for doctoral studies in reconstructive surgery at the Faculty of Medicine, University of Belgrade
         </p></br>
-      <ol><h5 id="awardscv"> Awards </h5></br>
+      <ol><h5 id="awardscv"> Nagrade </h5></br>
         <li> First prize for best poster presentation in the session:  Urethral Strictures and urethroplasty, 27th    EAU (European Association of Urology) Congress, Paris 2012: „Single stage repair of obliterated anterior urethral strictures by combined buccal mucosa graft and longitudinal dorsal penile skin flap“, Kojovic V, Acimovic M, Tulic C, Djordjevic M </li>
         <li> First prize for best poster presentation VII th South East Congress of Urology, Sarajevo, 2007., Acimovic M, Hadzi Djokic J, Tulic C: „Prognosis of biochemical relaps after radical prostatectomy based on multivariant analysis“. EUR UROL 2007;2(5):p 77. </li>
         <li> First prize for best paper: 1st South East Congress of Urology 2005, Acimovic M, Tulic C: „Standardization of transrectal ultrasound guided biopsy“. </li>
         <li> First prize for best poster presentation: „Increased number of detected Carcinoma of Prostate in group of patients with PSA value 4-10ng/ml by 10-12 core biopsy technic“, Durutovic O, Acimovic M ESU (European school of Urology) Belgrade 2001. </li>
         <li> Winner of the The City of Belgrade Annual Award in the field of medicine, for 2015. </li>
       </ol></br>
-      <h5> Memberships in International Societies </h5></br>
+      <h5> Međunarodna profesionalna članstva </h5></br>
         <p> EAU – European Association of Urology </p>
         <p> SIU - International Urological Association </p>
         <p> ESGURS – European Society for Genitourinary Reconstructive Surgeons </p></br>
-      <h5> Memberships in National Societies </h5></br>
+      <h5> Nacionalna profesionalna članstva </h5></br>
         <p> SUA -Serbian Urological Association, vice president (2013.-2016.) </p>
         <p> SUS-Serbian Urological Section, vice president (2014.-present) </p>
         <p> MUA-Macedonian Urological Assocition honorary member (2016.) </p>
@@ -92,12 +98,12 @@
       <h5> Number of PhDs supervised: </h5></br>
         <p> 3 PhDs currently </p></br>
       <ul><h5> Invited Lectures </h5></br>
-        <li> 35th Athenian Urology days Invited speaker “Urethroplasty for pan urethral disease”, chairmen Urogenital reconstruction session, Athens, Greek, 2016. </li>
+        <li> 35th Athenian Urology days Invited speaker “Uretroplastika za bolesti uretre”, chairmen Urogenital reconstruction session, Athens, Greek, 2016. </li>
         <li> SANU (Serbian Academy of Science and Art): The picture speaks more than a thousand word; invited speaker: “Surgery of Morbus Peyronie’s associated with ventral penile curvature (grafting procedure based on geometrical principle)”, International Symposium, Nis, Serbia 2018.  </li>
-        <li> 3rdSurgical Workshop Sava Perovic of complex UroGenital Reconstructive Surgery in Adult,invited speaker: Anterior Urethroplasty, Belgrade, Sebia, 2010.  </li>
-        <li> Serbian-Italian Urological Days, Live Surgical Workshop, SANU (Serbian Academy of Science and Art):”Laparoscopic radical prostatectomy”, invited speaker, chairmen  Belgrade, December 2015. </li>
-        <li> Urethral Reconstruction, Semi-Live Surgical Workshop, SANU (Serbian Academy of Science and Art): Invited speaker, chairmen, “Pan-Urethral Strictures One-stage repair” Belgrade December 2016. </li>
-        <li> 1st National Congress of The Urological Section of Serbian Medical Association and Regional Joint Meeting and ESU course “Update on treatment of Peyronie's disease”; Pro et Contra: “Bipolar TUR vs Greenlight laser for BPH” September, 28-30th, 2017, Belgrade, Serbia </li>
+        <li> 3. Operaciona sala Sava Perovic kompleksna operativna urogenitalna rekonstrukcija kod odraslih, invited speaker: prednja uretroplastika, Belgrade, Sebia, 2010.  </li>
+        <li> Serbian-Italian Urological Days, Live Surgical Workshop, SANU (Serbian Academy of Science and Art):”Laparoskopsko odstranjivanje prostate”, invited speaker, chairmen  Belgrade, December 2015. </li>
+        <li> Urethral Reconstruction, Semi-Live Surgical Workshop, SANU (Serbian Academy of Science and Art): Invited speaker, chairmen, “Rekonstrukcija suženja uretre jednom intervencijom” Belgrade December 2016. </li>
+        <li> 1st National Congress of The Urological Section of Serbian Medical Association and Regional Joint Meeting and ESU course “Novost u lečenju Peronijeve bolesti”; Pro et Contra: “Bipolar TUR vs Greenlight laser for BPH Transuretralno lečenje benigne hiperplazije prostate laserom” September, 28-30th, 2017, Belgrade, Serbia </li>
         <li> Croatian Urological Association Congress International Symposium invited speaker “Surgical Treatment of Peyronie’s Disease”, Porec, October 2017. </li>
         <li> 11th Osijek urological days, International Symposium invited speaker “Bulbar urethral stricture” and “Interstitial Brachytherapy in the Treatment of Prostate Carcinoma”, Osijek, Croatia 2015. </li>
         <li> Urology today, International Symposium, invited speaker “Radical Prostatectomy versus Brachytherapy in the treatment of prostate carcinoma” Olympia Hotel Vodice, 2018. </li>
@@ -128,7 +134,70 @@
         <li> Organizing Committee School of Urological Surgery, Live Surgery: Prostate 2016, Pirot, Serbia</li>
         <li> Organizing Committee Symposium Urological Endoscopy and Laparoscopy, Nis, 2014.</li>
         <li> Organizing Committee New Trends in the Diagnosis and Treatment of Prostate Cancer, Nis, Serbia, 2016</li>
-        <li> Organizing Committee Balkan Congress of Urology, Metropol Hotel Ohrid, North Macedonia 2019.</li>
+        <li> Organizing Committee Balkan Congress of Urology, Metropol Hotel Ohrid, North Macedonia 2019.</li></ul></br>
+      <ol><h5 id="bibliocv"> Original articles JCR and MEDLINE </h5></br>
+        <li>	Acimovic M, Milojevic B, Milosavljevic M, Skrodzka M, Radovanovic M, Rafailovic D, Dzamic Z, Djokic JH, Djinovic R. Primary dorsal buccal mucosa graft urethroplasty for anterior urethral strictures in patients with lichen sclerosus. Int Urol Nephrol. 2016. Apr;48(4):541-5. </li>
+        <li>	Hadzi-Djokic J, Pejcic TP, Acimovic M. Vesico-vaginal fistula: report of 220 cases. Int Urol Nephrol. 2009;41(2):299-302.</li>
+        <li>	Djordjevic ML, Bizic M, Stanojevic D, Bumbasirevic M, Kojovic V, Majstorovic M, Acimovic M, Pandey S, Perovic SV. Urethral Lengthening in metoidioplasty (female-to-male sex reassignment surgery) by combined buccal mucosa graft and labia minora flap. Urology. 2009;74(2):349-53.</li>
+        <li>	Hadzi-Djokic J, Pejcic T, Stamenkovic V, Petrovic M, Acimovic M: Buccal mucosal graft interposition in the treatment of recurrent vesicovaginal fistula: A report on two cases. Taiwan J Obstet Gynecol. 2015 Dec;54(6):773-5. </li>
+        <li>	Acimovic M, Tulic C, Dzamic Z, Pejcic T, Ladjevic N, Jovanovic M, Janicic A, Radosavljevic R, Hadzi-Djokic J: Results of application of orthotopic urine diversion according to Studer. Acta Chir Iugosl. 2007;54(4):29-32. </li>
+        <li>	Hadzi-Djokic J, Basic D, Dzamic Z, Aćimović M: Retrocaval ureter based on a series of 16 cases. Prog Urol. 2009;19(1):33-8.</li>
+        <li>	Pejcić T, Loncar Z, Rafailović D, Aćimović M, Dzamić Z, Hadzi-Djokić J. Genitourinary injuries associated with pelvic fractures. Acta Chir Iugosl. 2013;60(2):117-20.</li>
+        <li>	Jovanović M, Džamić Z, Aćimović M: Trans-Obturator-Tape (T.O.T.) "outside-in" approach in surgical treatment of female stress urinary incontinence. Acta Chir Iugosl. 2014;61(1):69-72. </li>
+        <li>	Milutinovic D, Dzamic Z, Acimovic M: Evaluation and management of traumatic rupture of the corpora cavernosa. Acta Chir Iugosl. 2007;54(2):131-4.</li>
+        <li>	Jovanovic M, Soldatovic I, Janjic A, Vuksanovic A, Dzamic Z, Acimovic M, Hadzi-Djokic J. Diagnostic value of the nuclear matrix protein 22 test and urine cytology in upper tract urothelial tumors. Urol Int. 2011;87(2):134-7.</li>
+        <li>	Acimovic M, Dabic-Stankovic K, Pejcic T, Dzamic Z, Rafailovic D, Hadzi-Djokic J. Preoperative Gleason score, percent of positive prostate biopsies and PSA in predicting biochemical recurrence after radical prostatectomy. J BUON. 2013;18(4):954-60.</li>
+        <li>	Pejcić T, Aćimović M, Dzamić Z, Maksimović H, Marković B, Hadzi-Djokić J. Bilateral triple renal pelvis: a case report. Vojnosanit Pregl. 2015 Feb;72(2):185-7. </li>
+        <li>	Pejčić T, Aćimović M, Džamić Z, Radovanović M, Hadži-Djokić J. Benign prostatic hyperplasia and prostate-specific antigen. Vojnosanit Pregl. 2015 May;72(5):447-53. Review. </li>
+        <li>	Hadzi-Djokić J, Pejčić T, Bašić D, Vukomanović I, Dzamić Z, Aćimović M Idiopathic retroneritoneal fibrosis: A Report on 15 Patients. Vojnosanit Pregl. 2015 Oct;72(10):928-31. </li>
+        <li>	Janicic A, Bumbasirevic U, Pekomezovic T, Cekerevac M, Acimovic M, Dzamic Z, Tulic C.  Partial versus radical nephrectomy for pT1a renal cancer in Serbia. J BUON. 2016 Nov-Dec;21(6):1449-1453.</li>
+        <li>	Petrovic J, Acimovic M, Jovicevic A, Rafailovic D, Petrovic I, Dzamic Z, Pejcic T, Hadzi-Djokic J. The assessment of knowledge and attitudes of men in Serbia about prostate cancer and possibilities for its early detection and treatment in 2011: a cross-sectional study. J BUON. 2019 Jan-Feb;24(1):233-238</li>
+        <li>	Gojnic M, Dugalic V, Brankovic M, Stojanovic I, Acimovic M, Vasiljevic B. Is insulin-dependent diabetes and obesity a predisposition for endometrial and pancreatic carcinoma? Clin Exp Obstet Gynecol. 2010;37(2):152-4.</li>
+        <li>	Lazić M, Hadzi-Djokić J, Basić D, Aćimović M. Congenital arteriovenous fistula of the horseshoe kidney with multiple hemangiomas. Srp Arh Celok Lek. 2012;140(7-8):508-10. </li>
+        <li>	Dzamic Z, Hadži-Djokic J, Tulic C, Vuksanovic A, Lalic N, Acimovic M, A. Janicic, O. Durutovic: Quality of life in patients with a modified Mainz-pouch II urinary diversion Acta Chir Iugosl 1999;46(1): 11-13</li>
+        <li>	Acimovic M, Tulic C, Dzamic Z, Radosavljevic R, Filimonovic J, Jovanovic M, Mitrovic D, Govedarevic V, Hadzi-Djokic J: Standardization of transrectal ultrasound guided biopsy. Acta Chir Iugosl. 2005;52(4):41-4.</li>
+        <li>	Acimovic M, Govedarevic V, Mitrovic D, Radosavljevic R, Hadzi-Djokic J, Tulic C, Dzamic Z, Jovanovic M, Zivkovic K, Babic M, Markovic-Lipkovski J: Correlation of high –molecular cytokeratin in tissue of prostate cancer with Gleason score and PSA. Acta Chir Iugosl. 2005;52(4):45-50.</li>
+        <li>	Acimovic M, Dzamic Z, Tulic C, Lalic N, Janicic A, Radosavljevic R, Mitrovic D, Hadzi-Djokic J: The possibilities of age reference values of PSA density in prostatic cancer screening. Acta Chir Iugosl. 2005;52(4):77-80.</li>
+        <li>	Hadzi-Djokic J, Acimovic M, Dzamic Z, Jovanovic M, Basic D, Colovic V, Petrovic M, Obradovic G: Radical retropubic prostatectomy – results in 127 surgically treated patients. Acta Chir Iugosl. 2005;52(4):55-8.</li>
+        <li>	Džamić Z, Radovanović M, Aćimović M: Surgical care vesicovaginal fistulas in women with malignant gynecological disease. Acta Chir Iugosl. 2014;61(1):25-7.</li>
+        <li>	Radosavljvic R, Hadzi-Djokic J, Acimovic M, Tulic C, Dzamic Z, Djokic M, Micic S. Histopathological evaluation of radical prostatectomy in the treatment of localized prostate cancer. Acta Chir Iugosl. 2005;52(4):109-12.</li>
+        <li>	Stojanovic S, Radosevic-Jelic Lj, Tulic C, Popov I, Babic D, Acimovic M, Masulovic D: Radical radiotherapy for localized prostate cancer in elderly. Acta Chir Iugosl. 2005;52(4):103-8.</li>
+        <li>	Aćimović M, Rafailović D, Bumbaširević U, Babić U, Šantrić V, Stanić M, Džamić Z, Hadži-Djokić J. Diode laser vaporization of prostate as treatment for benign prostatic enlargement: initial results of 73 patients with 1 year follow-up. Acta Chir Iugosl. 2014;61(1):21-4. </li>
+        <li>	Filimonovic J, Gvozdic B, Krivic B, Acimovic M, Tulic C, Hadzi-Djokic J: Anesthesia for radical prostatectomy. Acta Chir Iugosl. 2005;52(4):113-7.</li>
+        <li>	Pejcic T, Hadzi-Djokic J, Acimovic M, Topuzovic C, Milkovic B, Janjic A: Urinary prostate specific antigen: is the clinical use likely? Acta Chir Iugosl. 2005;52(4):69-74.</li>
+        <li>	Hadzi-Djokic J, Lalic N, Dzamic Z, Acimovic M, Tulic C, Markovic Z: Determination of biochemical relapse after radical prostatectomy by biological detection limit (BDL) after cystoprostatectomy using two PSA assays. Acta Chir Iugosl. 2005;52(4):59-61.</li>
+        <li>	Dzamic Z, Acimovic M, Tulic C, Basic D, Milutinovic D, Hadzi-Djokic J: Treatment of emergency surgical complications of kidney transplantations. Acta Chir Iugosl. 2007;54(2):91-4.</li>
+        <li>	Ladjevic N, Likic-Ladjevic I, Krivic B, Filimonovic J, Acimovic M, Dragicevic D, Argirovic R : Comparasion of Granisetron and Metoclopramide for prevention of nausea and vomiting following total cystectomy and ileal conduit. Acta Chir Iugosl. 2007;54(2):19-22.</li>
+        <li>	Jovanovic M, Hadzi-Djokic J, Dzamic Z, Acimovic M: Evaluation of the BARD BTA test in the diagnosis of upper urinary tract tumors. Acta Chir Iugosl. 2007;54(4):19-24.</li>
+        <li>	Dzamic Z, Hadzi-Djokic J, Acimovic M, Jovanovic M, Filimonovic J, Tulic C, Ladjevic N, Milkovic B, Pejcic T: Modified Mainz pouch II urinary diversion and quality of life. Acta Chir Iugosl. 2007;54(4):57-62.</li>
+        <li>	Pejcic T, Hadzi Djokic J, Acimovic M, Markovic B, Maksimovic H Milkovic B, Kajmakovic B: Local recurrence of bladder cancer after cystectomy with orthotopic bladder substitution and ileal conduit. Acta Chir Iugosl. 2007;54(4):63-68.</li>
+        <li>	Obradovic G, Stanojevic D, Jakovljevic J, Hadzi-Djokic J, Acimovic M: Five-years experience with urinary derivation by sigma-rectum pouch at the urology department of Smederevo. Acta Chir Iugosl. 2007;54(4):69-72.</li>
+        <li>	Ladjevic N, Likic-Ladjevic I, Dzamic Z, Acimovic M, Dragicevic D, Durutovic O: Combined general and epidural anesthesia versus general anesthesia for radical cystectomy. Acta Chir Iugosl. 2007;54(4):89-92.</li>
+        <li>	Janicic A, Tulic C, Radosevic-Jelic Lj, Dzamic Z, Acimovic M, Hadzi-Djokic J: Chemotherapy by M-VAC protocol in progressive bladder carcinoma treatment. Acta Chir Iugosl. 2007;54(4):97-100.</li>
+        <li>	Radosavljevic R, Hadzi-Djokic J, Acimovic M, Pejcic T, Tulic C, Dzamic Z: Morphologic characteristics of the urothelial bladder tumors. Acta Chir Iugosl. 2007;54(4):101-104.</li>
+        <li>	Pejcic T, Hadzi-Djokic J, Markovic B, Maksimovic H, Acimovic M, Milkovic B: Stage T2 prostate cancer presented with high serum prostate specific antigen and nonspecific bone lesions. Acta Chir Iugosl. 2007;54(4):109-113.</li>
+        <li>	Hadzi-Djokic J, Pejcic T, Vuksanovic A, Acimovic M, Dzamic Z: Orthotopic neobladder a 22 year experience. Acta Chir Iugosl. 2007;54(4):33-36.</li>
+        <li>	Hadzi-Djokić J, Pejcić T, Aćimović M, Andrejević V, Radosavljević R. Penile metastasis from invasive bladder cancer. Acta Chir Iugosl. 2009;56(2):101-3.</li>
+        <li>	Pejcić T, Hadzi-Djokić J, Marković B, Dragićević D, Glisić B, Lalić N, Aćimović M, Dzamić Z, Radosavljevic R. Urinary PSA level and relative tumor volume after prostate biopsy. Acta Chir Iugosl. 2009;56(2):17-21.</li>
+        <li>	Hadzi-Djokić J, Pejcić T, Colović V, Petrović M, Stamenković V, Aćimović M, Stanić M. Radical perineal prostatectomy. Acta Chir Iugosl. 2010;57(3):111-3.</li>
+        <li>	Hadzi-Djokić J, Pejcić T, Aćimović M, Andrejević V. The case of cavernous testicular hemangioma. Acta Chir Iugosl. 2010;57(2):107-9.</li>
+        <li>	Jovanovic M, Vuksanović A, Dzamić Z, Aćimović M, Radovanović M, Djurasić L. Usage of a Trans-Obturator-Tape (T.O.T.) "outside-in" approach in surgical treatment of female stress urinary incontinence. Acta Chir Iugosl.2011;58(1):99-102.</li>
+        <li>	Petrović M, Andrejević V, Aćimović M, Djurasić L, Pejcić T, Dzamić Z, Hadzi-Djokić J. Gigantic transitional cell carcinoma of the renal pelvis in the region of endemic nephropathy. Acta Chir Iugosl. 2012;59(3):105-7.</li>
+        <li>	Blagojević-Lazić R, Radivojević D, Andrejević V, Dzamić Z, Acimović M, Milutinović D, Djurasić L, Hadzi-Djokić J. Malignant disease in renal transplant recipients-our experience. Acta Chir Iugosl. 2012;59(1):49-51.</li>
+        <li>	Petrović M, Andrejević V, Djurasić L, Stamenković V, Acimović M, Pejcić T, Dragoslav B, Hadzi-Djokić J. Tumors of the horseshoe kidney-characteristics and literature review. Acta Chir Iugosl. 2012;59(1):53-5.</li>
+        <li>	Hadzi-Djokić J, Andrejević V, Djurasić L, Aćimović M, Petrović M, Pejcić T, Dzamić Z. Simultaneous ipsilateral testicular seminoma with pelvic ectopy and hematovesicula seminalis. Acta Chir Iugosl. 2012;59(3):109-11.</li>
+        <li>	Pejcić T, Dzamić Z, Dimitrijević V, Aćimović M, Hadzi-Djokić J. The case of the diverticular bladder tumor treated with diverticulectomy. Acta Chir Iugosl.2013;60(1):91-3.</li>
+        <li>	Dzamić ZM, Kajmaković BM, Pejcić T, Milković B, Aćimović M, Djurasić Lj, Djokić JH. Assessment of the degree of renal failure in patients undergoing ileal conduit as a form of urine derivation in relation to the type of ureteral insertion. Acta Chir Iugosl. 2013;60(1):53-60.</li>
+        <li>	Kajmaković BM, Dzamić ZM, Pejcić T, Milković B, Aćimović M, Djokić JH. Assessment of the degree of congestive changes in the upper urinary tract in patients undergoing ileal conduit as a form of urine derivation in relation to the type of ureteral insertion. Acta Chir Iugosl. 2013;60(3):17-24.</li>
+        <li>	Hadzi-Djokic J, Andrejevic V, Pejcic T, Djurasic L, Acimovic M, Dzamic Z. Bilateral renal cell carcinoma with bilateral synchronous adrenal gland metastases - a case report. Pol Przegl Chir. 2014 Feb 1;86(2):97-9.</li>
+        <li>	Hadži-Đokić J, Milojević B, Pejčić T, Aćimović M, Stamenković V,Džamić Z. Sigma-rectum pouch (Mainz Pouch II). Acta Chir Iugosl. 2014;61(1):29-34. Review</li>
+        <li>	Jovanović M, Džamić Z, Aćimović M, Kajmaković B, Pejčić T. Usage of  Green-Light HPS 180-W laser vaporisation for treatment of benign prostatic hyperplasia. Acta Chir Iugosl. 2014;61(1):57-6</li>
+        <li>	Pejčić T, Džamić Z, Aćimović M, Kajmaković B, Hadži-Djokić J. New and experimental techniques in the treatment of benign prostatic diseases. Acta Chir Iugosl. 2014;61(1):75-80. Review.</li>
+        <li>	Kajmaković BM, Džamić ZM, Dragićević S, Aćimović M, Milojević B, Djokić JH. Diagnostic and therapeutic protocol in the treatment of hypo functional kidney. Acta Chir Iugosl. 2014;61(1):113-8.</li>
+        <li>	Hadzi-Djokic J, Andrejevic V, Pejcic T, Djurasic L, Acimovic M, Dzamic Z. Bilateral renal cell carcinoma with bilateral synchronous adrenal gland metastases - a case report .Pol Przegl Chir. 2014 Feb;86(2):97-9. </li>
+        <li>	Hadzi-Djokic J, Pejcic T, Acimovic M, Dzamic Z: Tuberculous Bladder Contracture Treated by Augmentation Ileocystoplasty. Current Urology, 2007;1:121-124.</li>
+        <li>	Pejcic T, Hadzi-Djokic J, Markovic B, Dzamic Z, Djurasic L, Acimovic M. Repeated endoscopic treatments of multiple recurrent ureteral tumors following 15-year-long history of bladder tumors in the patient from endemic nephropathy region. Cent European J Urol. 2013;66(3):292-5.</li>
+      </ol></br>
     </div>
   </div>
   <footer>
