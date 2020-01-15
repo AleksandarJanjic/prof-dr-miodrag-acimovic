@@ -29,6 +29,10 @@ h5 {
   color: white;
 }
 
+#area-link {
+  color: black;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -47,14 +51,6 @@ a:visited {
 a:active {
   text-decoration: none;
   color:inherit;
-}
-
-#area-link {
-  color: black;
-}
-
-#area-link {
-  color: black;
 }
 
 .logo-img {
@@ -313,6 +309,7 @@ footer {
   background: none;
   border: none;
   margin-left: 2%;
+  margin-right: 3%;
   padding-left: 2%;
   padding-right: 2%;
 }
