@@ -322,6 +322,8 @@ footer {
   border: none;
   padding-left: 2%;
   padding-right: 2%;
+  margin-right: 4%;
+  margin-left: 4%;
 }
 
 .nav-button-actual:hover {
