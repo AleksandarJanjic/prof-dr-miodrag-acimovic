@@ -7,43 +7,108 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
+  <script src="myscript.js"></script>
   <title>Prof. dr Miodrag Aćimović</title>
 </head>
 <body>
   <div class="page">
   <header>
-    <div class="contact">
-      <img src="phone.png"/>
-      <p> +381 62 10 60 690 </p>
+    <div class="nav-buttons">
+      <button class="nav-button-actual" onclick="window.location.href = 'index-sr.html';"> POČETNA </button>
+      <button class="nav-button-actual" onclick="window.location.href = 'operacije.html';"> OPERACIJE </button>
+      <button class="nav-button-actual" onclick="window.location.href = 'intervencije.html';"> INTERVENCIJE </button>
+      <button class="nav-button-actual" onclick="window.location.href = 'kontakt.html';"> KONTAKT </button>
     </div>
     <div class="language-options">
-      <a href="index.html"> English </a>
-      <a> Srpski </a>
+      <a href="index.html"> ENGLISH </a>
     </div>
   </header>
   <div class="top">
+
+    <a class="slideshow-buttons" id="button-back"> < </a>
+
+    <div class="slideshow-container">
+
+      <div class="slide">
+        <p class="slide-title"> Surgery Live </p>
+        <p class="slide-content"> First Live surgery in Belgrade organised by Miodrag Aćimović, MD, PhD </p>
+        <a class="read-more-link" id="news1" href="https://www.vesti.rs/Drustvo/PRVI-PUT-U-BEOGRADU-Operacije-uzivo-na-Uroloskoj-klinici.html"> Read more </a>
+        <img class="slide-img"/>
+      </div>
+
+      <div class="slide inactiveSlide">
+        <p class="slide-title"> Interview </p>
+        <p class="slide-content"> Interview on the subject of Erectile dysfunction </p>
+        <a class="read-more-link" id="news1" href="https://www.blic.rs/vesti/drustvo/muke-srba-u-seksu-svaki-drugi-ima-problem-sa-erekcijom/04t5ltf"> Read more </a>
+        <img class="slide-img"/>
+      </div>
+
+      <div class="slide inactiveSlide">
+        <p class="slide-title"> Urology Today </p>
+        <p class="slide-content"> Miodrag Aćimović, MD, PhD: Radical prostatectomy vs brachytherapy </p>
+        <a class="read-more-link" id="news1" href="http://www.urology-today.com/radikalna-prostatektomija-vs-brahiterapija/"> Read more </a>
+        <img class="slide-img"/>
+      </div>
+
+      <div class="slide">
+        <p class="slide-title"> Good Morning Show </p>
+        <div class="slide-flex">
+          <div class="slide-text">
+            <p class="slide-content"> Miodrag Aćimović, MD, PhD on the Good Morning Show </p>
+            <a class="read-more-link" id="news1" href="https://www.youtube.com/watch?v=hj2gDr7bZnk"> Read more </a>
+          </div>
+          <img class="slide-img" src="good morning.png"/>
+        </div>
+      </div>
+
+      <div class="slide">
+        <p class="slide-title"> Operative Urology </p>
+        <div class="slide-flex">
+          <div class="slide-text">
+            <p class="slide-content"> TV report on the opening of the School of Urological Surgery in Pirot, Serbia </p>
+            <a class="read-more-link" id="news1" href="https://www.youtube.com/watch?v=RKoUOY21iXA"> Read more </a>
+          </div>
+          <img class="slide-img" src="school of urology.png"/>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="slideshow-buttons" id="button-fwd"> > </a>
+
+    <img src="prof-acimovic.png" class="prof-img"/>
+  </div>
+  <div class="logo">
     <div class="title">
       <h1> Prof. dr Miodrag Aćimović </h1>
       <h2> Urolog </h2>
     </div>
-    <img src="prof-acimovic.png" class="prof-img"/>
-  </div>
-  <div class="logo">
     <img class="logo-img" src="logo.png"/>
   </div>
   <div class="side-menu">
     <div class="services">
-      <p> Usluge </p>
+      <a href="operacije.html"><p> Operacije </p></a>
     </div>
     <div class="services-actual">
       <div class="services-actual-container">
-        <h3> | Otvorena (klasična) nefrektomija </h3>
+        <a href="operacije.html#classic-nephrectomy"><h3> | Otvorena (klasična) nefrektomija </h3></a>
       </div>
       <div class="services-actual-container">
-        <h3> | Plasiranje perkutane nefrostome (drenažnog katetera) </h3>
+        <a href="operacije.html#percutaneous-nephrostomy"><h3> | Plasiranje perkutane nefrostome (drenažnog katetera) </h3></a>
       </div>
       <div class="services-actual-container">
-        <h3> | Transuretralna resekcija prostate ili vrata bešike </h3>
+        <a href="operacije.html#transurethral-resection"><h3> | Transuretralna resekcija prostate ili vrata bešike </h3></a>
+      </div>
+    </div>
+    <div class="services">
+      <a href="intervencije.html"><p> Intervencije </p></a>
+    </div>
+    <div class="services-actual">
+      <div class="services-actual-container">
+        <a href="intervencije.html#condyloma-removal"><h3> | Skidanje kondiloma </h3></a>
+      </div>
+      <div class="services-actual-container">
+        <a href="intervencije.html#prostate-biopsy"><h3> | Biopsija prostate </h3></a>
       </div>
     </div>
   </div>
@@ -55,10 +120,10 @@
       <button class="jump-to-button" onclick="document.getElementById('bibliocv').scrollIntoView();"> Publikacije </button>
     </div></br>
     <div class="cv">
-      <h5 id="educv"> Obrazovanje </h5></br>
+      <h5 id="educv"> Education </h5></br>
         <p> Medical School: 1986-1992, Belgrade University, School of Medicine </p></br>
         <p> Residency: </p>
-        <p> 1992-1994 Interventna Radiologija, Institute of Radiology, Clinical Center of Serbia, Belgrade, Serbia </p></br>
+        <p> 1992-1994 Interventional Radiology, Institute of Radiology, Clinical Center of Serbia, Belgrade, Serbia </p></br>
         <p> Urology:1994-1999, Medical School, Belgrade University, university Urological clinic </br>
         January 1999. - Board Certified Specialist in Urology </p></br>
         <p> Master of Medical Sciences in Urology:
@@ -68,24 +133,24 @@
         2004 - 2007, Medical School, Belgrade University
         PhD Theses: " Correlation of expression of mitotic cyclins, high molecular weight cytokeratin and clinical parameters in the evaluation of prostate cancer aggression".
         </p></br>
-      <h5 id="employcv"> Radno iskustvo </h5></br>
+      <h5 id="employcv"> Employment </h5></br>
         <p> 1st Urology Department (Head of Department) Clinic of Urology, Clinical Center of Serbia,  Resavska 51, 11000 Belgrade, Serbia, 1994-present. </p></br>
       <h5> Academic positions </h5></br>
         <p> Associate Professor of Surgery, Medical School, University of Belgrade </p> </br>
-        <p> Member of the Program council in front of urology for doctoral studies in reconstructive surgery at the Faculty of Medicine, University of Belgrade
+        <p>Member of the Program council in front of urology for doctoral studies in reconstructive surgery at the Faculty of Medicine, University of Belgrade
         </p></br>
-      <ol><h5 id="awardscv"> Nagrade </h5></br>
+      <ol><h5 id="awardscv"> Awards </h5></br>
         <li> First prize for best poster presentation in the session:  Urethral Strictures and urethroplasty, 27th    EAU (European Association of Urology) Congress, Paris 2012: „Single stage repair of obliterated anterior urethral strictures by combined buccal mucosa graft and longitudinal dorsal penile skin flap“, Kojovic V, Acimovic M, Tulic C, Djordjevic M </li>
         <li> First prize for best poster presentation VII th South East Congress of Urology, Sarajevo, 2007., Acimovic M, Hadzi Djokic J, Tulic C: „Prognosis of biochemical relaps after radical prostatectomy based on multivariant analysis“. EUR UROL 2007;2(5):p 77. </li>
         <li> First prize for best paper: 1st South East Congress of Urology 2005, Acimovic M, Tulic C: „Standardization of transrectal ultrasound guided biopsy“. </li>
         <li> First prize for best poster presentation: „Increased number of detected Carcinoma of Prostate in group of patients with PSA value 4-10ng/ml by 10-12 core biopsy technic“, Durutovic O, Acimovic M ESU (European school of Urology) Belgrade 2001. </li>
         <li> Winner of the The City of Belgrade Annual Award in the field of medicine, for 2015. </li>
       </ol></br>
-      <h5> Međunarodna profesionalna članstva </h5></br>
+      <h5> Memberships in International Societies </h5></br>
         <p> EAU – European Association of Urology </p>
         <p> SIU - International Urological Association </p>
         <p> ESGURS – European Society for Genitourinary Reconstructive Surgeons </p></br>
-      <h5> Nacionalna profesionalna članstva </h5></br>
+      <h5> Memberships in National Societies </h5></br>
         <p> SUA -Serbian Urological Association, vice president (2013.-2016.) </p>
         <p> SUS-Serbian Urological Section, vice president (2014.-present) </p>
         <p> MUA-Macedonian Urological Assocition honorary member (2016.) </p>
@@ -98,12 +163,12 @@
       <h5> Number of PhDs supervised: </h5></br>
         <p> 3 PhDs currently </p></br>
       <ul><h5> Invited Lectures </h5></br>
-        <li> 35th Athenian Urology days Invited speaker “Uretroplastika za bolesti uretre”, chairmen Urogenital reconstruction session, Athens, Greek, 2016. </li>
+        <li> 35th Athenian Urology days Invited speaker “Urethroplasty for pan urethral disease”, chairmen Urogenital reconstruction session, Athens, Greek, 2016. </li>
         <li> SANU (Serbian Academy of Science and Art): The picture speaks more than a thousand word; invited speaker: “Surgery of Morbus Peyronie’s associated with ventral penile curvature (grafting procedure based on geometrical principle)”, International Symposium, Nis, Serbia 2018.  </li>
-        <li> 3. Operaciona sala Sava Perovic kompleksna operativna urogenitalna rekonstrukcija kod odraslih, invited speaker: prednja uretroplastika, Belgrade, Sebia, 2010.  </li>
-        <li> Serbian-Italian Urological Days, Live Surgical Workshop, SANU (Serbian Academy of Science and Art):”Laparoskopsko odstranjivanje prostate”, invited speaker, chairmen  Belgrade, December 2015. </li>
-        <li> Urethral Reconstruction, Semi-Live Surgical Workshop, SANU (Serbian Academy of Science and Art): Invited speaker, chairmen, “Rekonstrukcija suženja uretre jednom intervencijom” Belgrade December 2016. </li>
-        <li> 1st National Congress of The Urological Section of Serbian Medical Association and Regional Joint Meeting and ESU course “Novost u lečenju Peronijeve bolesti”; Pro et Contra: “Bipolar TUR vs Greenlight laser for BPH Transuretralno lečenje benigne hiperplazije prostate laserom” September, 28-30th, 2017, Belgrade, Serbia </li>
+        <li> 3rdSurgical Workshop Sava Perovic of complex UroGenital Reconstructive Surgery in Adult,invited speaker: Anterior Urethroplasty, Belgrade, Sebia, 2010.  </li>
+        <li> Serbian-Italian Urological Days, Live Surgical Workshop, SANU (Serbian Academy of Science and Art):”Laparoscopic radical prostatectomy”, invited speaker, chairmen  Belgrade, December 2015. </li>
+        <li> Urethral Reconstruction, Semi-Live Surgical Workshop, SANU (Serbian Academy of Science and Art): Invited speaker, chairmen, “Pan-Urethral Strictures One-stage repair” Belgrade December 2016. </li>
+        <li> 1st National Congress of The Urological Section of Serbian Medical Association and Regional Joint Meeting and ESU course “Update on treatment of Peyronie's disease”; Pro et Contra: “Bipolar TUR vs Greenlight laser for BPH” September, 28-30th, 2017, Belgrade, Serbia </li>
         <li> Croatian Urological Association Congress International Symposium invited speaker “Surgical Treatment of Peyronie’s Disease”, Porec, October 2017. </li>
         <li> 11th Osijek urological days, International Symposium invited speaker “Bulbar urethral stricture” and “Interstitial Brachytherapy in the Treatment of Prostate Carcinoma”, Osijek, Croatia 2015. </li>
         <li> Urology today, International Symposium, invited speaker “Radical Prostatectomy versus Brachytherapy in the treatment of prostate carcinoma” Olympia Hotel Vodice, 2018. </li>

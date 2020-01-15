@@ -6,15 +6,53 @@
   font-family: 'Inria Serif', serif;
 }
 
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
 h5 {
   font-size: 1.1em;
 }
 
+.read-more-link {
+  margin-top: 2%;
+  padding: 2%;
+  color: white;
+  background-color: #4e8cb5;
+}
+
+#news1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color:inherit;
+}
+
 .logo-img {
-  height: 85%;
+  height: 60%;
   width: auto;
-  padding-top: 1%;
-  padding-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .phone-img {
@@ -26,8 +64,8 @@ h5 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5vh 20vh 40vh 40vh auto 7vh;
-  grid-template-rows: 5vh 20vh 40vh 40vh auto 7vh;
+  -ms-grid-rows: 5vh 35vh 40vh 60vh auto 7vh;
+  grid-template-rows: 5vh 35vh 40vh 60vh auto 7vh;
       grid-template-areas:
     "header"
     "logo"
@@ -64,7 +102,7 @@ header {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-end;
   height: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -92,11 +130,13 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 1%;
-  margin-right: 2%;
+  margin-right: 1%;
+  margin-left: 2%;
 }
 
 .language-options a {
-  padding-left: 3%;
+  margin-left: 1%;
+  font-size: 0.9em;
 }
 
 .logo {
@@ -104,6 +144,9 @@ header {
   -ms-grid-column: 1;
   grid-area: logo;
   background-color: #4ba4bd;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
 }
 
 .top {
@@ -127,8 +170,11 @@ header {
 }
 
 .title {
-  margin-top: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 1%;
+  color: white;
+  width: 50%;
 }
 
 .side-menu {
@@ -192,12 +238,14 @@ footer {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .jump-to-button {
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 1%;
+  margin-top: 1%;
   padding-bottom: 1%;
   margin-left: 2%;
   background-color: #4e8cb5;
@@ -205,15 +253,117 @@ footer {
   border: none;
 }
 
+.slideshow-container {
+  margin-top: 1%;
+  width: 100%;
+}
+
+.slide {
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.slide-title {
+  font-size: 1.1em;
+  margin-bottom: 1%;
+}
+
+.slide-content {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.slide-img {
+  display: none;
+}
+
+
+.inactiveSlide {
+  display: none;
+}
+
+.activeSlide {
+
+}
+
+.slideshow-buttons {
+  font-size: 2em;
+  margin-top: 13%;
+}
+
+.nav-buttons {
+  margin-right: 1%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-button-actual {
+  background: none;
+  border: none;
+  margin-left: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-button-actual:hover {
+  background:  #4ba4bd;
+  color: white;
+}
+
+.contact-icons {
+  display: inline;
+  width: 22px;
+  height: 22px;
+}
+
+#phone-num {
+  display: inline;
+}
+
 @media only screen and (min-width: 550px) {
   .page {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    -ms-grid-rows: 5vh 35vh 40vh 100vh auto 7vh;
+    grid-template-rows: 5vh 35vh 40vh 100vh auto 7vh;
+  }
+
+  .prof-img {
+    height: 100%;
+    width: auto;
+  }
+
+  .slideshow-buttons {
+    margin-top: 5%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .slide-img {
+    display: inline;
+    width: 30%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 2%;
+  }
+
+  .slide-flex {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 @media only screen and (min-width: 1000px) {
+
+  h1 {
+    font-size: 1.1em;
+  }
+
   .page {
       width: 75%;
       margin-left: auto;
@@ -222,8 +372,8 @@ footer {
       display: grid;
       -ms-grid-columns: 30% 25% 20% 25%;
       grid-template-columns: 30% 25% 20% 25%;
-      -ms-grid-rows: 5vh 25vh auto 10vh;
-      grid-template-rows: 5vh 25vh auto 10vh;
+      -ms-grid-rows: 5vh 25vh minmax(80vh, auto) 10vh;
+      grid-template-rows: 5vh 25vh minmax(80vh, auto) 10vh;
           grid-template-areas:
         "logo header header header"
         "logo top top top"
@@ -263,13 +413,14 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    flex-direction: row;
     /*-webkit-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);*/
   }
 
   .logo-img {
-    height: 85%;
+    height: 45%;
     width: auto;
   }
 
@@ -359,6 +510,10 @@ footer {
     -ms-grid-column: 1;
     grid-area: footer;
     margin-top: 5%;
+  }
+
+  .title {
+    margin-left: 2%;
   }
 
   @media only screen and (min-width: 1000px) {
