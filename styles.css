@@ -82,10 +82,6 @@ a:active {
     "footer";
 }
 
-a {
-  text-decoration: none;
-}
-
 a:checked {
   text-decoration: none;
   color: inherit;
@@ -433,7 +429,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  }
+  
 
   .phone-img {
     height: 60%;
