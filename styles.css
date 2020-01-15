@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 * {
@@ -71,7 +73,7 @@ a:active {
   display: grid;
   -ms-grid-rows: 5vh 35vh 40vh 60vh auto 7vh;
   grid-template-rows: 5vh 35vh 40vh 60vh auto 7vh;
-      grid-template-areas:
+          grid-template-areas:
     "header"
     "logo"
     "top"
@@ -150,9 +152,15 @@ header {
   -ms-grid-column: 1;
   grid-area: logo;
   background-color: #4ba4bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content:space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
 }
 
 .top {
@@ -300,8 +308,12 @@ footer {
 .nav-buttons {
   margin-right: 1%;
   margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 100%;
 }
 
@@ -360,8 +372,13 @@ footer {
   }
 
   .slide-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -381,7 +398,7 @@ footer {
       grid-template-columns: 30% 25% 20% 25%;
       -ms-grid-rows: 5vh 25vh minmax(80vh, auto) 10vh;
       grid-template-rows: 5vh 25vh minmax(80vh, auto) 10vh;
-          grid-template-areas:
+              grid-template-areas:
         "logo header header header"
         "logo top top top"
         "sidebar main main main"
@@ -420,7 +437,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     /*-webkit-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.75);*/
