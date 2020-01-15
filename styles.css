@@ -53,6 +53,10 @@ a:active {
   color: black;
 }
 
+#area-link {
+  color: black;
+}
+
 .logo-img {
   height: 60%;
   width: auto;
