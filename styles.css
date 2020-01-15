@@ -31,6 +31,7 @@ h5 {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -46,6 +47,10 @@ a:visited {
 a:active {
   text-decoration: none;
   color:inherit;
+}
+
+#area-link {
+  color: black;
 }
 
 .logo-img {
@@ -81,6 +86,7 @@ a {
 
 a:checked {
   text-decoration: none;
+  color: inherit;
 }
 
 .cv {
@@ -100,9 +106,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: flex-end;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   height: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -131,7 +137,7 @@ header {
           flex-direction: row;
   margin-top: 1%;
   margin-right: 1%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .language-options a {
@@ -295,7 +301,7 @@ footer {
   margin-right: 1%;
   margin-top: 1%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
 }
 
