@@ -395,8 +395,8 @@ footer {
   .nav-button-actual {
     background: none;
     border: none;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 2%;
+    padding-right: 3%;
     margin-right: 4%;
     margin-left: 4%;
   }
