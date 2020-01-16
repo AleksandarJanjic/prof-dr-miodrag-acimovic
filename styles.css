@@ -71,8 +71,8 @@ a:active {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5vh 35vh 40vh 60vh auto 7vh;
-  grid-template-rows: 5vh 35vh 40vh 60vh auto 7vh;
+  -ms-grid-rows: auto 35vh 40vh 60vh auto 7vh;
+  grid-template-rows: auto 35vh 40vh 60vh auto 7vh;
           grid-template-areas:
     "header"
     "logo"
@@ -303,14 +303,17 @@ footer {
 
 .nav-buttons {
   margin-right: 1%;
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 .nav-button-actual {
@@ -376,6 +379,18 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+
+  .nav-buttons {
+    margin-right: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -429,7 +444,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  
+
 
   .phone-img {
     height: 60%;
