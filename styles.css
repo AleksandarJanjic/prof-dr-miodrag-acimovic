@@ -391,6 +391,15 @@ footer {
             justify-content: center;
     height: 100%;
   }
+
+  .nav-button-actual {
+    background: none;
+    border: none;
+    padding-left: auto;
+    padding-right: auto;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
